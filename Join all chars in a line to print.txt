@@ -1,0 +1,48 @@
+Join all caracters in a string & print them in a line:
+
+#include <stdio.h>
+
+
+#define str_size[100]; //Declare the maximum size of the string
+
+
+int main(void)
+
+{
+    
+char str[str_size];
+    
+int i,alph;
+    
+printf("Input the string : ");
+  
+printf("\nCount the total number of words in a string :\n");
+    fgets(str, sizeof str, stdin);	
+
+   
+i = 0;
+    
+alph = 1;
+ 
+  
+while(str[i]!='\0')
+   
+ {
+       
+ if(str[i]==' ' || str[i]=='\n' )
+       
+ {
+            
+alph++;
+    
+    }
+
+      
+  i++;
+    
+}
+
+printf("Total number of alphabets in the string is : %d\n",alph-1);
+
+}
+    
